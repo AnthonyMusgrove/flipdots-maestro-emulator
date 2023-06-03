@@ -6,6 +6,7 @@ See more at: https://flipdots.com/en/software/
 <br/><br/>
 
 ![Mushroom](Docs/images/mushroom.png)
+<b>note:</b>  the raw data shown in the terminal app above isn't indicative of actual values - this was just for testing with literal 0, 1 and 2 (0 light, 1 dark, 2 transparent).  These are actually 0x0, 0x1, 0x2 respectively.
 
 #### What can I do with this emulator?
 This emulator was written to allow programmers the opportunity to code maestro 'FlipApps' without needing to purchase the maestro system or any hardware.  This client+server pair follows the FlipDots Maestro protocol, handling the OpCodes provided in the protocol specification, providing a system that will behave in the exact manner of the real hardware implementation.
