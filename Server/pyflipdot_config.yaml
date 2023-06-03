@@ -1,0 +1,25 @@
+
+panel:
+    resolution:
+        height: 16
+        width: 16
+        #height: 52
+        #width: 48
+    background_color: "black"
+    
+    pixels:
+        height: 10
+        width: 10
+        on_colour: "#00ff1a"
+        off_colour: "#0f0f0f"
+        outline_colour: "#212423"
+    
+    spacing:
+        x: 2
+        y: 2
+
+maestro:
+    uid: 99
+    server:
+        ip: 0.0.0.0
+        port: 44000
