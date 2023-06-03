@@ -5,6 +5,8 @@
 See more at: https://flipdots.com/en/software/
 <br/><br/>
 
+![Mushroom](Docs/images/mushroom.png)
+
 #### What can I do with this emulator?
 This emulator was written to allow programmers the opportunity to code maestro 'FlipApps' without needing to purchase the maestro system or any hardware.  This client+server pair follows the FlipDots Maestro protocol, handling the OpCodes provided in the protocol specification, providing a system that will behave in the exact manner of the real hardware implementation.
 <br/><br/>
