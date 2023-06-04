@@ -13,8 +13,7 @@
 
 
 <p>
-  This is the emulator's very first test - to draw a simple 16x16 mushroom on a 16x16 emulated panel.
-  
+ You can create your own font files by making a copy of dots_all_for_now.yaml and editing the contents.  You can also add more characters to the existing font file by adding more bitmap arrays within the bitmaps: section of the font file.  
 </p>
 
 ![SimpleTextDemo](/Docs/images/simple_text_demo.png)
