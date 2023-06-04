@@ -8,6 +8,6 @@
 <b>draw_mushroom.py</b>
 <p>
   This is the emulator's very first test - to draw a simple 16x16 mushroom on a 16x16 emulated panel.
-  ![DrawMushroom](Docs/images/draw_mushroom_flipapp.png)
+  
 </p>
-
+![DrawMushroom](Docs/images/draw_mushroom_flipapp.png)
