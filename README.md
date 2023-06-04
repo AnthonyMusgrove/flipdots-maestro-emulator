@@ -1,7 +1,7 @@
 # AlfaZeta FlipDots Maestro Emulator
 
 #### What is AlfaZeta FlipDots Maestro? 
-<p>An exerpt from the AlfaZeta Website: The Maestro system is a complete solution which is delivered together with a Linux based hardware controller. It connects via Wifi to LAN and via Ethernet cable to a network of RS485 converters feeding signal directly to flip dot panels.</p>
+<p>An excerpt from the AlfaZeta Website: The Maestro system is a complete solution which is delivered together with a Linux based hardware controller. It connects via Wifi to LAN and via Ethernet cable to a network of RS485 converters feeding signal directly to flip dot panels.</p>
 See more at: https://flipdots.com/en/software/
 <br/><br/>
 
