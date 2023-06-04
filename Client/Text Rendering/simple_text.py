@@ -263,3 +263,11 @@ add_character_to_frame(test_frame, 10, 10, test_font, "B")
 
 # draw frame
 draw_frame(bytes(test_frame))
+
+time.sleep(3)
+
+add_character_to_frame(test_frame, 20, 20, test_font, "C")
+add_character_to_frame(test_frame, 30, 30, test_font, "A")
+
+draw_frame(bytes(test_frame))
+
