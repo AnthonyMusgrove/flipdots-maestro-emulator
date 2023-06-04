@@ -3,7 +3,7 @@
 ############################################################
 ##                                                        ##
 ##                      FlipDots Maestro                  ##
-##                   "Draw Mushroom FlipApp"              ##
+##                    "Set Pixels FlipApp"                ##
 ##                                                        ##
 ##                  By Anthony K. Musgrove                ##
 ##            Senior Engineer of Labworx, Australia       ##
