@@ -8,7 +8,7 @@
 <ul>
   <li><b>simple_text.py</b> The example FlipApp</li>
   <li><b>dotFont.py</b> The font loading & handling class</li>
-  <li><b>dots_all_for_now.yaml</b> An example font file - only 3 characters included A,B,</li>
+  <li><b>dots_all_for_now.yaml</b> An example font file - only 3 characters included A,B & C</li>
  </ul>
 
 
