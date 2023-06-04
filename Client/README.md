@@ -11,4 +11,4 @@
   
 </p>
 
-![DrawMushroom](Docs/images/draw_mushroom_example.png)
+![DrawMushroom](/Docs/images/draw_mushroom_example.png)
