@@ -106,6 +106,81 @@ def clear_screen():
     clear_bytes = bytes(clear_bytes);
     draw_frame(clear_bytes)
 
+def new_frame():
+    
+    new_frame = [0x0] * (connected_panel_width*connected_panel_height)
+    return new_frame
+
+def get_x_y_frame_index(x, y):
+
+    global connected_panel_width, connected_panel_height
+    return(y * connected_panel_width + x)
+
+def add_to_frame(frame, x, y, pixel_colour):
+    frame[get_x_y_frame_index(x,y)] = pixel_colour
+
+def add_character_to_frame(frame, start_x, start_y, font, character):
+
+    #  screen 10x10
+    #  char 5x7
+    #  start 3,3
+
+    #   0 1 2 3 4 5 6 7 8 9
+    #   # # # # # # # # # #
+    # 0         o o o
+    # 1       o       o 
+    # 2       o       o
+    # 3       o       o
+    # 4       o o o o o
+    # 5       o       o 
+    # 6       o       o
+    # 7
+    # 8
+    # 9
+
+    font_data = font.get_char_bitmap(character)
+    
+    char_width = font.get_char_width()
+    char_height = font.get_char_height()
+    
+    global connected_panel_width, connected_panel_height
+    
+    # so we know screen width
+    
+    # draw the first line of the bitmap at start_x, start_y
+    
+    cur_x = start_x 
+    cur_y = start_y
+    
+    cur_data_line = 0
+    cur_data_col = 0
+    
+    for y in range(char_height):
+        for x in range(char_width):
+            
+            if(font_data[cur_data_line][cur_data_col] == 0x0):
+                #print(" Drawing dark pixel at " + str(cur_x) + "," + str(cur_y))
+                #draw_dark_pixel(cur_x, cur_y)
+                #time.sleep(33/1000)
+                add_to_frame(frame, cur_x, cur_y, colour_code_dark)
+            
+            if(font_data[cur_data_line][cur_data_col] == 0x1):
+                add_to_frame(frame, cur_x, cur_y, colour_code_light)
+                #print(" Drawing light pixel at " + str(cur_x) + "," + str(cur_y))
+                #draw_light_pixel(cur_x, cur_y)
+                #time.sleep(33/1000)
+            
+            cur_x += 1
+            cur_data_col += 1
+        
+        # done a row, now we have to CR and LF (cr to start_x)
+        cur_data_line += 1
+        cur_data_col = 0
+        cur_x = start_x
+        cur_y += 1
+
+
+
 def draw_character(start_x, start_y, font, character):
 
     #  screen 10x10
@@ -165,10 +240,6 @@ def draw_character(start_x, start_y, font, character):
         cur_y += 1
             
 
-        
-# draw_light_pixel(at_x, at_y):
-
-
 print("Connecting to maestro driver at: " + maestro_server_ip + ":" + str(maestro_server_port))
 connect_to_panel()
 
@@ -177,9 +248,18 @@ get_panel_resolution()
 
 print("Connected panel resolution: " + str(connected_panel_width) + "x" + str(connected_panel_height))
 
-clear_screen()
-
+# load test font
 test_font = dotFont("dots_all_for_now")
 
-draw_character(3, 3, test_font, "A")
-draw_character(10, 10, test_font, "B")
+# clear the screen
+clear_screen()
+
+# create new empty frame
+test_frame = new_frame()
+
+# add characters to frame
+add_character_to_frame(test_frame, 3, 3, test_font, "A")
+add_character_to_frame(test_frame, 10, 10, test_font, "B")
+
+# draw frame
+draw_frame(bytes(test_frame))
