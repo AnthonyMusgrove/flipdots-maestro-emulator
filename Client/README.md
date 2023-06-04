@@ -10,4 +10,6 @@
   This is the emulator's very first test - to draw a simple 16x16 mushroom on a 16x16 emulated panel.
   
 </p>
-![DrawMushroom](Docs/images/draw_mushroom_flipapp.png)
+
+![Mushroom](Docs/images/mushroom.png)
+![DrawMushroom](Docs/images/draw_mushroom_example.png)
