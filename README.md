@@ -21,5 +21,5 @@ This emulator was written to allow programmers the opportunity to code maestro '
   <tr><td>0x3</td><td>Display a pixel of a specific color, at the given coordinates</td><td>Completed</td></tr>
   <tr><td>0x4</td><td>Display a frame</td><td>Completed</td></tr>
   <tr><td>0x5</td><td>Send FlipApp’s UID</td><td>TBC</td></tr>
-  <tr><td>0x6</td><td>Get display resolution</td><td>TBC</td></tr>
+  <tr><td>0x6</td><td>Get display resolution</td><td>Completed</td></tr>
 </table>
