@@ -11,5 +11,4 @@
   
 </p>
 
-![Mushroom](Docs/images/mushroom.png)
 ![DrawMushroom](Docs/images/draw_mushroom_example.png)
