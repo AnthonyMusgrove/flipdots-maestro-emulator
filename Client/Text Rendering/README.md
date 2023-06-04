@@ -17,3 +17,33 @@
 </p>
 
 ![SimpleTextDemo](/Docs/images/simple_text_demo.png)
+
+##### Also demonstrated:  Frame Buffering
+
+![FrameBufferDemo](/Docs/images/frame_buffer_demo.png)
+
+```python
+# load test font
+test_font = dotFont("dots_all_for_now")
+
+# clear the screen
+clear_screen()
+
+# create new empty frame
+test_frame = new_frame()
+
+# add characters to frame
+add_character_to_frame(test_frame, 3, 3, test_font, "A")
+add_character_to_frame(test_frame, 10, 10, test_font, "B")
+
+# draw frame
+draw_frame(bytes(test_frame))
+
+time.sleep(3)
+
+add_character_to_frame(test_frame, 20, 20, test_font, "C")
+add_character_to_frame(test_frame, 30, 30, test_font, "A")
+
+draw_frame(bytes(test_frame))
+```
+
