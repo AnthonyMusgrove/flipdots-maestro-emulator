@@ -284,6 +284,39 @@ add_character_to_frame(test_frame, 24, 17, test_font, "U")
 add_character_to_frame(test_frame, 30, 17, test_font, "V")
 add_character_to_frame(test_frame, 36, 17, test_font, "W")
 
+add_character_to_frame(test_frame, 0, 26, test_font, "X")
+add_character_to_frame(test_frame, 6, 26, test_font, "Y")
+add_character_to_frame(test_frame, 12, 26, test_font, "Z")
+
+add_character_to_frame(test_frame, 20, 26, test_font, "1")
+add_character_to_frame(test_frame, 23, 26, test_font, "2")
+add_character_to_frame(test_frame, 29, 26, test_font, "3")
+add_character_to_frame(test_frame, 35, 26, test_font, "4")
+add_character_to_frame(test_frame, 41, 26, test_font, "5")
+
+add_character_to_frame(test_frame, 0, 34, test_font, "6")
+add_character_to_frame(test_frame, 6, 34, test_font, "7")
+add_character_to_frame(test_frame, 12, 34, test_font, "8")
+add_character_to_frame(test_frame, 18, 34, test_font, "9")
+add_character_to_frame(test_frame, 24, 34, test_font, "0")
+
+add_character_to_frame(test_frame, 30, 34, test_font, ".")
+add_character_to_frame(test_frame, 32, 34, test_font, ":")
+add_character_to_frame(test_frame, 34, 34, test_font, ",")
+add_character_to_frame(test_frame, 36, 34, test_font, ";")
+add_character_to_frame(test_frame, 38, 34, test_font, "'")
+add_character_to_frame(test_frame, 40, 34, test_font, "\"")
+add_character_to_frame(test_frame, 43, 34, test_font, "(")
+
+add_character_to_frame(test_frame, 0, 43, test_font, ")")
+add_character_to_frame(test_frame, 4, 43, test_font, "!")
+add_character_to_frame(test_frame, 6, 43, test_font, "?")
+add_character_to_frame(test_frame, 12, 43, test_font, "+")
+add_character_to_frame(test_frame, 18, 43, test_font, "-")
+add_character_to_frame(test_frame, 22, 43, test_font, "*")
+add_character_to_frame(test_frame, 31, 43, test_font, "/")
+add_character_to_frame(test_frame, 39, 43, test_font, "=")
+
 
 # draw frame
 draw_frame(bytes(test_frame))
