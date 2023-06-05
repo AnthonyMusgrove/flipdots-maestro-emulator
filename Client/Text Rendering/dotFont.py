@@ -23,13 +23,9 @@ class dotFont():
     def __init__(self, font_file):
         
         self.name = ""
-        self.char_width = 0
-        self.char_height = 0
-        self.char_count = 0
         self.font_data = 0
         self.font_file = font_file
-        #self.char_bitmaps = [] * self.character_count 
-        
+                
         self.load_font_file()
 
     def load_font_file(self):
@@ -47,18 +43,18 @@ class dotFont():
             self.font_data = yaml.load(ymlconf, Loader=yaml.FullLoader)
 
             self.name = self.font_data["info"]["name"]
-            self.char_width = self.font_data["info"]["char_width"]
-            self.char_height = self.font_data["info"]["char_height"]
-            self.char_count = self.font_data["info"]["char_count"]
             
-            print("Loaded font with name " + self.name + ", charsize: " + str(self.char_width) + "x" + str(self.char_height) + ", total_chars: " + str(self.char_count))
+            print("Loaded font with name " + self.name + ", character count: " + str(self.get_char_count()))
     
     def get_char_bitmap(self, _char):
         return self.font_data["bitmaps"][_char]
 
-    def get_char_width(self):
-        return self.char_width
+    def get_char_width(self, _char):
+        return len(self.font_data["bitmaps"][_char][0])
+        
+    def get_char_height(self, _char):
+        return len(self.font_data["bitmaps"][_char])
 
-    def get_char_height(self):
-        return self.char_height
-
+    def get_char_count(self):
+        return len(self.font_data["bitmaps"])
+            

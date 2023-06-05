@@ -140,8 +140,8 @@ def add_character_to_frame(frame, start_x, start_y, font, character):
 
     font_data = font.get_char_bitmap(character)
     
-    char_width = font.get_char_width()
-    char_height = font.get_char_height()
+    char_width = font.get_char_width(character)
+    char_height = font.get_char_height(character)
     
     global connected_panel_width, connected_panel_height
     
@@ -202,9 +202,9 @@ def draw_character(start_x, start_y, font, character):
 
     font_data = font.get_char_bitmap(character)
     
-    char_width = font.get_char_width()
-    char_height = font.get_char_height()
-    
+    char_width = font.get_char_width(character)
+    char_height = font.get_char_height(character)
+        
     global connected_panel_width, connected_panel_height
     
     # so we know screen width
@@ -258,16 +258,18 @@ clear_screen()
 test_frame = new_frame()
 
 # add characters to frame
-add_character_to_frame(test_frame, 3, 3, test_font, "A")
-add_character_to_frame(test_frame, 10, 10, test_font, "B")
+add_character_to_frame(test_frame, 0, 1, test_font, "A")
+add_character_to_frame(test_frame, 6, 1, test_font, "B")
+add_character_to_frame(test_frame, 12, 1, test_font, "C")
+add_character_to_frame(test_frame, 18, 1, test_font, "D")
+add_character_to_frame(test_frame, 24, 1, test_font, "E")
+add_character_to_frame(test_frame, 30, 1, test_font, "F")
+add_character_to_frame(test_frame, 36, 1, test_font, "G")
+add_character_to_frame(test_frame, 42, 1, test_font, "H")
+
+add_character_to_frame(test_frame, 0, 9, test_font, "I")
+
 
 # draw frame
-draw_frame(bytes(test_frame))
-
-time.sleep(3)
-
-add_character_to_frame(test_frame, 20, 20, test_font, "C")
-add_character_to_frame(test_frame, 30, 30, test_font, "A")
-
 draw_frame(bytes(test_frame))
 
