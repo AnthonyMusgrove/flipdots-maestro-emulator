@@ -8,9 +8,14 @@
 <ul>
   <li><b>simple_text.py</b> The example FlipApp</li>
   <li><b>dotFont.py</b> The font loading & handling class</li>
-  <li><b>dots_all_for_now.yaml</b> An example font file - only 3 characters included A,B & C</li>
+  <li><b>dots_all_for_now.yaml</b> An example font file - included up to character I</li>
  </ul>
 
+<p>
+  Font class now allows for completely dynamic glyph sizes - charwidth and charheight is determined individually by character based
+  on the bitmap byte array for that particular glyph.  So we no longer need to define an overall char width/height for a font, as each
+  individual glyph can now be of its own individual size (width AND height).
+</p>
 
 <p>
  You can create your own font files by making a copy of dots_all_for_now.yaml and editing the contents.  You can also add more characters to the existing font file by adding more bitmap arrays within the bitmaps: section of the font file.  
