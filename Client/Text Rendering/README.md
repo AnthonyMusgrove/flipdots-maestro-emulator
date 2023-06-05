@@ -8,7 +8,7 @@
 <ul>
   <li><b>simple_text.py</b> The example FlipApp</li>
   <li><b>dotFont.py</b> The font loading & handling class</li>
-  <li><b>dots_all_for_now.yaml</b> An example font file - included up to character I</li>
+  <li><b>dots_all_for_now.yaml</b> An example font file - (A-Z, 0-9, some special characters)</li>
  </ul>
 
 <p>
@@ -22,6 +22,8 @@
 </p>
 
 ![SimpleTextDemo](/Docs/images/simple_text_demo.png)
+
+![FontDemo2](/Docs/images/font_demo_2.png)
 
 ##### Also demonstrated:  Frame Buffering
 
