@@ -268,6 +268,21 @@ add_character_to_frame(test_frame, 36, 1, test_font, "G")
 add_character_to_frame(test_frame, 42, 1, test_font, "H")
 
 add_character_to_frame(test_frame, 0, 9, test_font, "I")
+add_character_to_frame(test_frame, 2, 9, test_font, "J")
+add_character_to_frame(test_frame, 8, 9, test_font, "K")
+add_character_to_frame(test_frame, 14, 9, test_font, "L")
+add_character_to_frame(test_frame, 20, 9, test_font, "M")
+add_character_to_frame(test_frame, 28, 9, test_font, "N")
+add_character_to_frame(test_frame, 34, 9, test_font, "O")
+add_character_to_frame(test_frame, 40, 9, test_font, "P")
+
+add_character_to_frame(test_frame, 0, 17, test_font, "Q")
+add_character_to_frame(test_frame, 6, 17, test_font, "R")
+add_character_to_frame(test_frame, 12, 17, test_font, "S")
+add_character_to_frame(test_frame, 18, 17, test_font, "T")
+add_character_to_frame(test_frame, 24, 17, test_font, "U")
+add_character_to_frame(test_frame, 30, 17, test_font, "V")
+add_character_to_frame(test_frame, 36, 17, test_font, "W")
 
 
 # draw frame
